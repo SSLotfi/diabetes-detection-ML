@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<h2>Diabetes Detection</h2>
+
+<form action="/" method="POST">
+  <label for="pregnancies">Pregnancies:</label><br>
+  <input type="text" id="pregnancies" name="pregnancies" value={{request.form.pregnancies}}><br>
+  <label for="glucose">Glucose:</label><br>
+  <input type="text" id="glucose" name="glucose" value={{request.form.glucose}}><br>
+  <label for="bloodpressure">Blood Pressure:</label><br>
+  <input type="text" id="bloodpressure" name="bloodpressure" value={{request.form.bloodpressure}}><br>
+  <label for="skinthickness">Skin Thickness:</label><br>
+  <input type="text" id="skinthickness" name="skinthickness" value={{request.form.skinthickness}}><br>
+  <label for="insulin">Insulin:</label><br>
+  <input type="text" id="insulin" name="insulin" value={{request.form.insulin}}><br>
+  <label for="bmi">BMI:</label><br>
+  <input type="text" id="bmi" name="bmi" value={{request.form.bmi}}><br>
+  <label for="diabetespedigreefunction">Diabetes Pedigree Function:</label><br>
+  <input type="text" id="diabetespedigreefunction" name="diabetespedigreefunction" value={{request.form.diabetespedigreefunction}}><br>
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age" value={{request.form.age}}><br><br>
+  <input type="submit" name = "datainput" value="Submit"><br><br>
+  <label for="result">Result:</label><br>
+  <label for="result">{{result}}</label><br>
+</form> 
+
+<p>Enter the data then click the "Submit" button to get the result</p>
+
+</body>
+</html>
